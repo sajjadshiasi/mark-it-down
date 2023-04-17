@@ -1,0 +1,79 @@
+.wrapper {
+  @apply py-2 px-4 rounded-[12px];
+}
+
+.default {
+  @apply bg-purple text-white;
+}
+
+.text {
+  @apply bg-transparent text-black;
+}
+
+.outline {
+  @apply border-[1px] border-purple text-purple text-16;
+}
+.event {
+  @apply border-[2px] border-white text-white text-16;
+}
+
+.hover {
+  &:hover {
+  }
+}
+
+.gradient {
+  @apply text-white font-bold text-16;
+  background: rgb(123, 81, 215);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(123, 81, 215, 1) 0%,
+    rgba(73, 140, 170, 1) 100%
+  ) !important;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(123, 81, 215, 1) 0%,
+    rgba(73, 140, 170, 1) 100%
+  ) !important;
+  background: linear-gradient(
+    0deg,
+    rgba(123, 81, 215, 1) 0%,
+    rgba(73, 140, 170, 1) 100%
+  ) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b51d7",endColorstr="#498caa",GradientType=1);
+}
+
+.action {
+  @apply hidden md:block text-white;
+  background: rgb(71, 15, 188);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(71, 15, 188, 1) 0%,
+    rgba(142, 97, 235, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(71, 15, 188, 1) 0%,
+    rgba(142, 97, 235, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(71, 15, 188, 1) 0%,
+    rgba(142, 97, 235, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#470fbc",endColorstr="#8e61eb",GradientType=1);
+}
+.purple {
+  @apply bg-purple text-white;
+}
+.roundedSix {
+  @apply rounded-[4px] md:rounded-[6px];
+}
+
+.roundedTwelve {
+  @apply rounded-[6px] md:rounded-[8px] xl:rounded-[12px];
+}
+
+.roundedFourteen {
+  @apply rounded-[8px] md:rounded-[10px] lg:rounded-[12px] xl:rounded-[14px];
+}

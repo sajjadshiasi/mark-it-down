@@ -1,0 +1,12 @@
+.wrapper {
+  @apply overflow-hidden;
+  .tabs {
+    @apply mt-18 h-full;
+  }
+  .assetsWrapper {
+    @apply flex gap-18 justify-center mt-[6rem];
+  }
+  .latest {
+    @apply mt-[80px];
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "menu": {
+    "home": "Home",
+    "inventory": "Inventory",
+    "avatar": "Avatar",
+    "market": "Market",
+    "messages": "Messages",
+    "builder": "Kitblock Builder",
+    "profile": "Profile"
+  },
+  "profile": {
+    "guest": "Guest",
+    "before-login": "Create an account or sign in.",
+    "after-login": "View your profile or sign out.",
+    "start-building": "Start Building",
+    "start-building-sub-title": "Select a KitBlock and create your space."
+  },
+  "auth": {
+    "signin": "Sign In",
+    "signup": "Sign Up",
+    "profile": "Profile",
+    "signout": "Signout"
+  }
+}

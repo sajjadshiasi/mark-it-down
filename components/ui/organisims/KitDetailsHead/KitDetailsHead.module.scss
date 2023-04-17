@@ -1,0 +1,44 @@
+// 2xl:w-[723px] 2xl:h-[403px] 3xl:w-[914px] 3xl:h-[510px]
+.wrapper {
+  @apply mt-8;
+  .inner {
+    @apply flex md:flex-row flex-col-reverse w-full h-full gap-0 md:gap-24;
+    .image {
+      @apply mt-16 relative w-full 3xl:h-[510px] lg:h-[403px] md:h-[285px] h-[255px];
+      img {
+        @apply rounded-2xl 3xl:h-[510px] 2xl:h-[403px] md:h-[244px] h-full object-fill;
+      }
+    }
+    .info {
+      @apply flex flex-col w-full justify-between;
+      .textInner {
+        @apply md:py-[1rem] mt-[100px];
+        .likeAndDislike {
+          @apply flex flex-row  w-full items-center text-gray-500;
+          .like {
+            @apply px-18 md:py-8 py-2 rounded-[10px] border-2 border-gray-100 flex items-center;
+            div {
+              @apply inline-block ml-10;
+            }
+          }
+          .dislike {
+            @apply px-18 md:py-8 py-2 rounded-[10px] border-2 border-gray-100 flex items-center ml-10 md:min-w-[127px];
+            div {
+              @apply inline-block ml-10;
+            }
+          }
+          svg {
+            @apply inline-block w-[15px] md:w-[20px] lg:w-[24px];
+          }
+        }
+      }
+
+      .btn {
+        @apply items-end w-full hidden md:flex;
+        button {
+          @apply 2xl:w-[550px] 2xl:h-[72px] lg:w-[435px] lg:h-[57px] md:w-[261px] md:h-[40px] w-full h-[42px];
+        }
+      }
+    }
+  }
+}

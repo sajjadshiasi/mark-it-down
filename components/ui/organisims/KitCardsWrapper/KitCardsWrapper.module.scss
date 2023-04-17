@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex flex-col mb-32 md:mb-[70px];
+  .headCard {
+    @apply flex flex-row justify-between items-center w-full h-full;
+    .arrowWrapper {
+      @apply lg:mr-22;
+      svg {
+        @apply mx-6;
+      }
+    }
+  }
+  .boxText {
+    @apply mb-20 md:mb-30;
+  }
+}
+
+.isWrapContainer {
+  @apply flex gap-18 flex-wrap;
+}

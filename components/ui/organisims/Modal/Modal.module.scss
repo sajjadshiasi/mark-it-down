@@ -1,0 +1,12 @@
+.wrapper {
+  @apply w-fit h-fit top-0 left-0 flex items-center justify-center p-4 relative;
+  .closeBtn {
+    @apply absolute top-10 right-30 text-gray-500 p-0 m-0 h-fit w-fit;
+    .closeIcon {
+      @apply text-32 sm:text-[40px] md:text-48 w-fit h-fit;
+    }
+  }
+  .inner {
+    @apply bg-white rounded-2xl;
+  }
+}

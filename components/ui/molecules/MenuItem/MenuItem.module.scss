@@ -1,0 +1,22 @@
+.wrapper {
+  @apply flex flex-row lg:flex-col items-center lg:items-center gap-16 lg:gap-8 lg:gap-8 xl:gap-6 2xl:gap-8 cursor-pointer w-fit;
+  .menuItemIcon {
+    @apply w-[30px] h-[30px] lg:w-[25px] lg:h-[25px] xl:w-[30px] xl:h-[30px];
+  }
+
+  .menuItemText {
+    @apply text-32 xs:text-48 lg:text-14 text-black font-bold lg:font-medium;
+  }
+}
+
+.active {
+  @apply text-purple;
+  .menuItemText {
+    @apply text-purple text-32 xs:text-48 lg:text-14 font-bold lg:font-medium;
+  }
+  svg {
+    g {
+      @apply stroke-purple;
+    }
+  }
+}

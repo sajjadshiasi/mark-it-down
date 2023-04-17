@@ -1,0 +1,60 @@
+.wrapper {
+  @apply relative text-white w-full lg:w-[calc(100%-290px)] xl:w-[calc(100%-360px)] 2xl:w-[calc(100%-412px)] 3xl:w-[calc(100%-480px)] h-auto;
+  .inner {
+    @apply py-32;
+    .slide {
+      .imageSlider {
+        @apply h-[205px] sm:h-[320px] lg:h-[280px] xl:h-[350px] 2xl:h-[400px] 3xl:h-[465px] relative;
+        img {
+          @apply rounded-[20px] object-cover;
+        }
+        .overlay {
+          @apply absolute z-[2] w-full h-[40%] top-[60%] rounded-[20px];
+          background: transparent
+            linear-gradient(180deg, #00000000 0%, #00000096 100%) 0% 0%
+            no-repeat padding-box;
+        }
+      }
+      .textAndBtn {
+        @apply absolute xl:bottom-[50px] z-[3] lg:bottom-[40px] md:bottom-[30px] bottom-[20px] md:px-32 px-6 w-full hidden md:block;
+        .textAndBtnInner {
+          @apply flex flex-row justify-between items-center;
+          .text {
+            @apply text-left;
+            .title {
+              @apply md:leading-8 leading-tight tracking-tight;
+            }
+            .subTitle {
+              @apply flex flex-row w-full items-center ml-6 lg:mt-18 mt-4;
+              .subInner {
+                @apply text-white font-bold tracking-normal ml-8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .arrowsBtn {
+    @apply w-full flex justify-end items-end mt-4;
+  }
+  .dots {
+    @apply absolute z-[3] left-1/2 -translate-x-1/2 lg:-mt-[5rem] xl:-mt-[6rem] -mt-24 sm:-mt-32 md:-mt-[36px];
+    button {
+      @apply lg:w-[12px] lg:h-[12px] w-[8px] h-[8px] bg-white mx-2 rounded-full;
+    }
+  }
+}
+
+.boxBtn {
+  @apply md:w-[217px] md:h-[58px] w-[170px] h-[45px] flex justify-center items-center;
+  .playButton {
+    @apply flex gap-10;
+    .btnSvg {
+      @apply w-[40px] h-[40px] bg-[#A888EE] rounded-full flex justify-center items-center;
+      svg {
+        @apply -mr-4;
+      }
+    }
+  }
+}

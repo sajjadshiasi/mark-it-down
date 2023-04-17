@@ -1,0 +1,39 @@
+@import './reset.css';
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-family: 'calibri', system-ui, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 10px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+}
+
+input {
+  @apply outline-0;
+  &:focus-visible {
+    @apply outline-0;
+  }
+}
+.dots {
+  .active {
+    width: 20px !important;
+    border-radius: 5px !important;
+  }
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}

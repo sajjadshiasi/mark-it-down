@@ -1,0 +1,19 @@
+.wrapper {
+  @apply w-full bg-white flex flex-col items-center;
+  .fakeHeader {
+    @apply h-[50px] md:h-[60px] lg:h-[70px] 2xl:h-[80px]  w-full max-w-[1920px] z-[1];
+  }
+  .main {
+    @apply w-full  max-w-[1920px] flex px-10 lg:px-20 xl:px-30;
+    .fakeSidebar {
+      @apply hidden lg:flex z-[1];
+      width: 60px !important;
+    }
+    .container {
+      @apply w-full lg:w-[calc(100%-60px)] flex justify-center;
+      .box {
+        @apply w-full max-w-[1000px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1380px] 3xl:max-w-[1650px] pl-0 md:pl-10;
+      }
+    }
+  }
+}

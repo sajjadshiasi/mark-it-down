@@ -1,0 +1,7 @@
+.wrapper {
+  @apply flex items-center gap-4;
+
+  .statsIcon {
+    @apply w-[13px] md:w-[15px] xl:w-[17px];
+  }
+}

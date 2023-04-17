@@ -1,0 +1,83 @@
+.wrapper {
+  @apply rounded-2xl flex items-center justify-between w-[340px] h-[110px] xs:w-[360px] xs:h-[130px] md:w-[430px]
+md:h-[160px] p-18 relative;
+  .cardDetail {
+    @apply flex flex-col h-full justify-between;
+    .cardTexts {
+      @apply flex flex-col;
+      .title {
+        @apply text-purple;
+      }
+      .eventTitle {
+        @apply text-white;
+      }
+      .eventSubtitle {
+        @apply text-white;
+      }
+    }
+    .btnGroup {
+      @apply flex gap-8;
+      button {
+        @apply min-w-[110px];
+      }
+    }
+    .builderBtn {
+      @apply w-[135px] xs:w-[160px];
+      .eventBtn {
+      }
+    }
+  }
+  .cardImage {
+    @apply w-1/4 relative h-full;
+  }
+
+  .cardImageMobile {
+    @apply w-[70px] h-[83px] xs:w-[106px] xs:h-[126px] relative;
+  }
+
+  .cardDetailMobile {
+    @apply flex flex-col justify-between ml-30;
+    .username {
+      @apply text-purple;
+    }
+    .btnGroup {
+      @apply flex gap-8 items-center;
+      button {
+        @apply underline;
+      }
+    }
+  }
+}
+
+.defaultBg {
+  background: rgb(213, 221, 229);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(213, 221, 229, 1) 0%,
+    rgba(234, 238, 241, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(213, 221, 229, 1) 0%,
+    rgba(234, 238, 241, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(213, 221, 229, 1) 0%,
+    rgba(234, 238, 241, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d5dde5",endColorstr="#eaeef1",GradientType=1);
+}
+
+.transaprentBg {
+  @apply bg-transparent;
+}
+
+.eventBg {
+  background: rgb(231, 77, 112);
+  background: linear-gradient(
+    0deg,
+    rgba(231, 77, 112, 1) 0%,
+    rgba(246, 177, 26, 1) 100%
+  );
+}

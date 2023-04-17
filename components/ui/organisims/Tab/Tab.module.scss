@@ -1,0 +1,16 @@
+//
+.navRefWrapper {
+  @apply flex flex-shrink-0 justify-start relative py-20 h-full;
+  .btnWrapper {
+    @apply flex items-center bg-transparent w-full gap-[100px] transition-colors text-purple border-b-2 border-b-purple;
+    .navBtn {
+      @apply bg-transparent cursor-pointer z-20 select-none h-full w-[100px] text-center;
+    }
+  }
+}
+.transitionsWrapper {
+  @apply absolute z-10 rounded-md top-0 left-0 bg-gray-300;
+}
+.transitionsInner {
+  @apply absolute bottom-0 left-0 z-10 h-[0.5px];
+}

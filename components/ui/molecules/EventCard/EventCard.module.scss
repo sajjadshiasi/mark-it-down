@@ -1,0 +1,22 @@
+.wrapper {
+  @apply w-[280px] xl:w-[350px] 2xl:w-[400px] 3xl:w-[465px] h-[280px] xl:h-[350px] 2xl:h-[400px] 3xl:h-[460px] my-32 lg:flex relative rounded-[20px] hidden;
+  background-image: url('../../../../public/images/homeEvent/bg-card.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .topImage {
+    @apply w-full absolute lg:top-[-25px] xl:top-[-30px] 2xl:top-[-40px] h-[60%];
+  }
+  .content {
+    @apply pl-10 pb-20 xl:pl-16 xl:pb-32 2xl:pl-20 2xl:pb-[46px] self-end lg:gap-10 xl:gap-20 2xl:gap-[43px] flex flex-col;
+    .eventText {
+      @apply text-red-700;
+      h2 {
+        @apply leading-[2.5rem];
+      }
+    }
+    .eventBtn {
+      @apply w-fit bg-red-700 border-red-700 2xl:px-20 rounded-[8px];
+    }
+  }
+}

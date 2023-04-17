@@ -1,0 +1,6 @@
+.wrapper {
+  @apply flex justify-center flex-col items-center rounded-[14px] border-[3px] border-gray-100 relative md:w-[129px] w-[108px] h-[78px] md:h-[92px] lg:w-[170px] lg:h-[100px] 2xl:w-[194px] 2xl:h-[114px];
+  .icon {
+    @apply bg-white absolute -top-[18px] w-[33px] h-[33px] z-[1];
+  }
+}

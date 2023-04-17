@@ -1,0 +1,34 @@
+.input {
+  .headInput {
+    @apply flex flex-row justify-between items-center w-full h-full mb-2 md:mb-6 lg:mb-8 xl:mb-10;
+    .label {
+      @apply font-bold text-gray-700;
+    }
+    .info {
+      @apply flex justify-center items-center rounded-full w-[17px] h-[17px] md:w-[22px] md:h-[22px] xl:w-[27px] xl:h-[27px] border-purple border md:border-2 p-4 text-purple;
+    }
+  }
+  .wrapper {
+    @apply relative min-h-[30px] sm:min-h-[48px] md:min-h-[64px] block min-w-[265px] sm:min-w-[430px] md:min-w-[580px] w-full h-full bg-gray-100 rounded-[6px] sm:rounded-[10px] md:rounded-[14px] text-16 md:text-18 lg:text-20 2xl:text-24 px-16 text-black font-medium;
+  }
+  .search {
+    @apply bg-gray-300 py-6 px-14 rounded-3xl;
+    .searchIcon {
+      @apply w-[17px] h-[17px] md:w-[22px] md:h-[22px] flex items-center;
+    }
+    input {
+      @apply text-16 w-[120px];
+    }
+  }
+  .fieldWrapper {
+    .fieldInner {
+      @apply relative;
+    }
+    .eyeIcon {
+      @apply absolute  z-[2] sm:mt-20  mt-6 sm:right-[70px] right-[30px] md:w-[30px] md:h-[30px] w-[20px] h-[20px]  cursor-pointer;
+    }
+  }
+}
+.textError {
+  @apply text-red-300 mt-2 pl-4 font-medium;
+}

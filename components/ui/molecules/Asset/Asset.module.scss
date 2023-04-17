@@ -1,0 +1,9 @@
+.wrapper {
+  @apply flex gap-4 items-center justify-center bg-gray-300 rounded-3xl py-2;
+  .assetIcon {
+    @apply w-[36px] h-[23px] xs:w-[42px] xs:h-[27px] md:w-[49px] md:h-[31px];
+  }
+  .assetCount {
+    @apply text-14 xs:text-16 md:text-18 lg:text-20 font-bold text-blue pr-10;
+  }
+}

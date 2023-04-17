@@ -1,0 +1,18 @@
+.wrapper {
+  @apply fixed lg:hidden top-0 left-0 w-full h-full bg-white z-[5];
+  .closeBtn {
+    @apply absolute top-10 right-30 text-gray-500 p-0 m-0;
+    .closeIcon {
+      @apply text-48;
+    }
+  }
+  .container {
+    @apply w-full h-full flex flex-col pt-[100px] pl-[50px] gap-14 xs:gap-20;
+    .profile {
+      @apply justify-start;
+    }
+    .menu {
+      @apply w-fit items-start;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.homeHeaderSection {
+  @apply flex lg:gap-8 xl:gap-10 2xl:gap-12 3xl:gap-[15px];
+}
+.homeCardWrapper {
+  @apply w-full flex sm:flex-row lg:hidden flex-col justify-between items-center my-18 gap-16;
+}
+.head {
+  @apply flex flex-row justify-start;
+  .card {
+    @apply basis-1/3;
+  }
+  .slider {
+    @apply basis-2/3;
+  }
+}
